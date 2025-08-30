@@ -20,7 +20,7 @@ export default function useAccount(apiKey?: string) {
 
 			const json = await response.json();
 
-			return { currency: json.currency };
+			return { currency: json.currencyCode };
 		},
 	});
 
